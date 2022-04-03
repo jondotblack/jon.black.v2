@@ -6,7 +6,7 @@ const GitHubLink = () => {
     <Flex
       as={Link}
       align="center"
-      href="https://github.com/jondotblack/jon.black"
+      href="https://github.com/jondotblack/jon.black.v2"
       isExternal
       justify="space-between"
       textStyle="default"
