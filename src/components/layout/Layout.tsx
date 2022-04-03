@@ -17,7 +17,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ bgColor = 'crema', children, seo }: LayoutProps) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   const { title } = seo || {};
   const { TEXT_COLOR_TOKEN } = constants;
 
@@ -26,12 +26,14 @@ const Layout = ({ bgColor = 'crema', children, seo }: LayoutProps) => {
 
     setColorToken(bgColor);
     setColorToken(textColor, TEXT_COLOR_TOKEN);
-  }, [bgColor, colorMode]);
+  }, [bgColor, colorMode, TEXT_COLOR_TOKEN]);
+
+  const pageTitle = title ? `${title} | ` : '';
 
   return (
     <>
       <NextSeo
-        title={`jon.black ${title && ` | ${title}`}`}
+        title={`${pageTitle}jon.black`}
         description="Jon Black - a creator with a technical mind. I consult for startups, coach entrepreneurs, and build digital products."
       />
 
