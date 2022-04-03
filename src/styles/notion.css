@@ -1,0 +1,61 @@
+:root {
+  --notion-max-width: 100%;
+  --chakra-breakpoint-sm: 576px;
+  --chakra-breakpoint-md: 768px;
+  --chakra-breakpoint-lg: 992px;
+  --chakra-breakpoint-xl: 1400px;
+}
+
+.notion {
+  font-family: var(--chakra-fonts-body);
+  font-size: var(--chakra-fontSizes-lg);
+  line-height: var(--chakra-lineHeights-7);
+}
+
+@media screen and (max-width: 768px) {
+  .notion {
+    font-size: var(--chakra-fontSizes-md);
+    line-height: var(--chakra-lineHeights-base);
+  }
+}
+
+.notion-page {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.notion-header,
+.notion-app {
+  background: none;
+}
+
+.notion-gray_background_co {
+  background-color: var(--chakra-colors-whiteAlpha-500);
+}
+
+.notion-table-of-contents-item {
+  transition: color 40ms ease-in 0s;
+}
+
+.notion-table-of-contents-item:hover {
+  background: none;
+  color: var(--chakra-colors-rockBottom);
+}
+
+.notion-hr {
+  border-top: 1px solid var(--fg-color-0);
+}
+
+.notion-list li {
+  padding-top: var(--chakra-space-1);
+  padding-bottom: var(--chakra-space-1);
+}
+
+/* typography */
+.notion-h2 {
+  font-size: 1.75rem;
+}
+
+.notion-h3 {
+  font-size: 1.5rem;
+}
