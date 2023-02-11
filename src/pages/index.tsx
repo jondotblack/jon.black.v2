@@ -10,10 +10,14 @@ const HomePage: NextPage = () => {
     <Layout>
       <Banner>
         <Heading>
-          Hi, I&apos;m Jon - currently VP of Engineering for IncludeHealth. I consult for startups,
-          coach entrepreneurs, and own{' '}
+          Jon Black - currently VP of Engineering for IncludeHealth. I consult for startups, coach
+          entrepreneurs and executives. Owner of{' '}
           <Link href="/ventures/blackhill" variant="underline">
             Black Hill Farm
+          </Link>{' '}
+          and co-founder of{' '}
+          <Link href="https://communal.works" variant="underline">
+            communal.works
           </Link>
           .
         </Heading>
