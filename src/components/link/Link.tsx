@@ -19,7 +19,7 @@ const Link = ({
   variant,
 }: AnchorProps) => {
   return (
-    <NextLink href={href} passHref={passHref}>
+    <NextLink href={href} passHref={passHref} legacyBehavior>
       <Anchor isExternal={isExternal} sx={sx} variant={variant}>
         {children}
       </Anchor>

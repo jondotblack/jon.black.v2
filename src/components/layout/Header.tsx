@@ -46,7 +46,7 @@ const Header = () => {
 
         <Stack display={{ base: 'none', lg: 'flex' }} direction="row" spacing={6}>
           {navigation.map(({ href, label }) => (
-            <NextLink href={href} passHref key={`nav_${label}`}>
+            <NextLink href={href} passHref key={`nav_${label}`} legacyBehavior>
               <Button as="a" variant={isActive(href) ? 'active' : 'outline'}>
                 {label}
               </Button>
@@ -70,7 +70,7 @@ const Header = () => {
       <MobileMenu isOpen={isOpen} onClose={onClose}>
         <Stack direction="column" spacing={6}>
           {navigation.map(({ href, label }) => (
-            <NextLink href={href} passHref key={`nav_${label}`}>
+            <NextLink href={href} passHref key={`nav_${label}`} legacyBehavior>
               <Button as="a" variant={isActive(href) ? 'active' : 'outline'}>
                 {label}
               </Button>

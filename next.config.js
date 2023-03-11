@@ -10,7 +10,28 @@ const nextConfig = {
   },
   experimental: { esmExternals: false },
   images: {
-    domains: ['www.notion.so', 'notion.so', 'images.unsplash.com', 'pbs.twimg.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.notion.so',
+      },
+      {
+        protocol: 'https',
+        hostname: 'notion.so',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pbs.twimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'amazonaws.com',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   async redirects() {

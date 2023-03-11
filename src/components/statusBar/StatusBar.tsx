@@ -74,7 +74,7 @@ const StatusBar = () => {
         px="70px"
         textStyle="default"
       >
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           {activeUpdate?.name && (
             <motion.div
               key={`update_${activeUpdate.id}`}
