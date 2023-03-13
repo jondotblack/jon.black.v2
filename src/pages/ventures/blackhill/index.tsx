@@ -33,7 +33,11 @@ const BlackHillPage: NextPage = () => {
             text="Upcoming events"
             isExternal
           />
-          <BlockLink href="mailto:hello@blackhill.farm" text="Make a reservation" isExternal />
+          <BlockLink
+            href="https://www.airbnb.com/rooms/50506944"
+            text="Make a reservation"
+            isExternal
+          />
           <BlockLink href="mailto:hello@blackhill.farm" text="Become a partner" isExternal />
           <BlockLink href="/ventures/blackhill/handbook" text="Read our guest handbook" />
           <BlockLink
