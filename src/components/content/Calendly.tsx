@@ -1,9 +1,9 @@
-import { ReactFragment } from 'react';
+import { ReactNode } from 'react';
 import { Box } from '@chakra-ui/react';
 import { InlineWidget } from 'react-calendly';
 
 interface BannerProps {
-  children?: ReactFragment;
+  children?: ReactNode;
   url?: string;
 }
 

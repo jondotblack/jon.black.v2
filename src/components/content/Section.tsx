@@ -1,9 +1,9 @@
-import { ReactFragment } from 'react';
+import { ReactNode } from 'react';
 import { Box, Flex, Heading } from '@chakra-ui/react';
 import { getColSpan } from 'utils';
 
 interface BannerProps {
-  children: ReactFragment;
+  children: ReactNode;
   heading?: string;
 }
 
