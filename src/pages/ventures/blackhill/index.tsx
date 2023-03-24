@@ -11,7 +11,7 @@ const BlackHillPage: NextPage = () => {
       <Layout bgColor="rockBottom" seo={{ title: 'Black Hill Farm' }}>
         <Banner>
           <Box>
-            <Heading fontSize="5xl">black hill farm</Heading>
+            <Heading fontSize="5xl">Black Hill Farm</Heading>
             <Heading fontSize="3xl">
               Hill & Dale Road
               <br />
@@ -21,18 +21,21 @@ const BlackHillPage: NextPage = () => {
               Stay. Eat. Gather. Explore. Recover.
             </Heading>
             <Text textStyle="lead" mt={1}>
-              In March 2020, I started the process of renovating a six-acre foreclosed farm in
-              western New Jersey. After 18 months the property, it is ready for guests and events.
+              A small homestead located on six-acres in western New Jersey. We grow a diverse range
+              of crops, from heirloom tomatoes to medicinal herbs, using organic and regenerative
+              practices that prioritize soil health, biodiversity, and well-being of our community.
             </Text>
           </Box>
         </Banner>
 
         <Section>
-          <BlockLink
-            href="https://www.exploretock.com/blackhillfarm"
-            text="Upcoming events"
-            isExternal
-          />
+          {/* Asked to temporarily disabled
+            <BlockLink
+              href="https://www.exploretock.com/blackhillfarm"
+              text="Upcoming events"
+              isExternal
+            /> 
+          */}
           <BlockLink
             href="https://www.airbnb.com/rooms/50506944"
             text="Make a reservation"

@@ -89,6 +89,11 @@ export const ActiveVentureList = [
     text: 'Black Hill Farm',
   },
   {
+    description: 'Built by the community, for the community.',
+    href: 'https://communal.works',
+    text: 'Communal Works',
+  },
+  {
     description: 'Keep it local. Keep it independent.',
     href: '',
     text: 'Root',
