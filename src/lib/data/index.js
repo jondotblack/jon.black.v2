@@ -5,13 +5,13 @@ export const ClientList = [
     isExternal: true,
     name: (
       <>
-        IncludeHealth{' '}
+        Heat Waves{' '}
         <Badge colorScheme="orange" ml={2}>
           current
         </Badge>
       </>
     ),
-    url: 'https://www.includehealth.com/',
+    url: 'https://www.heatwaves.co/',
   },
   {
     name: 'Amazon',
@@ -21,6 +21,11 @@ export const ClientList = [
     isExternal: true,
     name: 'Something New',
     url: 'https://somethingnew.co/',
+  },
+  {
+    isExternal: true,
+    name: 'IncludeHealth',
+    url: 'https://www.includehealth.com/',
   },
   {
     name: 'Spotify',
@@ -84,7 +89,7 @@ export const ClientList = [
 
 export const ActiveVentureList = [
   {
-    description: 'Stay. Eat. Gather. Explore. Recover.',
+    description: 'Nourish. Gather. Explore. Recover.',
     href: '/ventures/blackhill',
     text: 'Black Hill Farm',
   },

@@ -34,10 +34,10 @@ const BlackHillPage: NextPage = () => {
             </Box>
             <Box w={{ base: getColSpan(12), lg: getColSpan(7) }}>
               <Text textStyle="lead" mt={1}>
-                A small farm located on six-acres in western New Jersey. We grow a diverse range of
+                A small farm located on six acres in western New Jersey. We grow a diverse range of
                 crops, from heirloom tomatoes to medicinal herbs, experimenting with organic and
-                regenerative practices that prioritize soil health, biodiversity, and well-being of
-                our community.
+                regenerative practices that prioritize soil health, biodiversity, and the well-being
+                of our community.
               </Text>
             </Box>
           </Stack>

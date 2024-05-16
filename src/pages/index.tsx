@@ -10,8 +10,13 @@ const HomePage: NextPage = () => {
     <Layout>
       <Banner>
         <Heading>
-          Jon Black - currently VP of Engineering for IncludeHealth. I consult for startups, coach
-          entrepreneurs and executives. Owner of{' '}
+          Jon Black - currently consulting for{' '}
+          <Link href="https://www.heatwaves.co/" variant="underline">
+            Heat Waves
+          </Link>{' '}
+          product agency. Former CTO and VP of Engineering with extensive team management
+          experience. Specializing in startup consultation, coaching entrepreneurs and executives.
+          Owner of{' '}
           <Link href="/ventures/blackhill" variant="underline">
             Black Hill Farm
           </Link>{' '}
@@ -22,7 +27,7 @@ const HomePage: NextPage = () => {
           .
         </Heading>
         <Heading mt={10}>
-          For coaching, mentorship, or playing your mixtape - you can find me on{' '}
+          If you&apos;re interested in working together - you can find me on{' '}
           <Link href="https://www.linkedin.com/in/jontblack/" variant="underline">
             LinkedIn
           </Link>{' '}
@@ -30,11 +35,11 @@ const HomePage: NextPage = () => {
           <Link href="mailto:hello@jon.black" variant="underline">
             email
           </Link>
-          . Don&apos;t have anything specific, but just want to talk? I offer free{' '}
+          . Free{' '}
           <Link href="/office-hours" variant="underline">
             office hours
           </Link>{' '}
-          every Tuesday afternoon.
+          every Tuesday afternoon for informal chats.
         </Heading>
       </Banner>
 
