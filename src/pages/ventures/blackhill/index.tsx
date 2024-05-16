@@ -1,5 +1,17 @@
 import type { NextPage } from 'next';
-import { Box, DarkMode, Heading, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Center,
+  DarkMode,
+  Flex,
+  Heading,
+  HStack,
+  Image,
+  Spacer,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
+import { getColSpan } from 'utils';
 
 import { Banner, Section } from 'components/content';
 import { Layout } from 'components/layout';
@@ -10,39 +22,34 @@ const BlackHillPage: NextPage = () => {
     <DarkMode>
       <Layout bgColor="rockBottom" seo={{ title: 'Black Hill Farm' }}>
         <Banner>
-          <Box>
-            <Heading fontSize="5xl">Black Hill Farm</Heading>
-            <Heading fontSize="3xl">
-              Hill & Dale Road
-              <br />
-              Tewksbury, NJ 08833
-            </Heading>
-            <Heading fontSize="4xl" mt={8}>
-              Stay. Eat. Gather. Explore. Recover.
-            </Heading>
-            <Text textStyle="lead" mt={1}>
-              A small homestead located on six-acres in western New Jersey. We grow a diverse range
-              of crops, from heirloom tomatoes to medicinal herbs, using organic and regenerative
-              practices that prioritize soil health, biodiversity, and well-being of our community.
-            </Text>
-          </Box>
+          <Stack align="center" direction={{ base: 'column', md: 'row' }} spacing={2}>
+            <Box w={{ base: getColSpan(12), lg: getColSpan(5) }}>
+              <Image
+                alt="Black Hill Farm"
+                mx="auto"
+                w={{ base: '300px', md: 'full' }}
+                objectFit="cover"
+                src="/black-hill-logo-primary.png"
+              />
+            </Box>
+            <Box w={{ base: getColSpan(12), lg: getColSpan(7) }}>
+              <Text textStyle="lead" mt={1}>
+                A small farm located on six-acres in western New Jersey. We grow a diverse range of
+                crops, from heirloom tomatoes to medicinal herbs, experimenting with organic and
+                regenerative practices that prioritize soil health, biodiversity, and well-being of
+                our community.
+              </Text>
+            </Box>
+          </Stack>
         </Banner>
 
         <Section>
-          {/* Asked to temporarily disabled
-            <BlockLink
-              href="https://www.exploretock.com/blackhillfarm"
-              text="Upcoming events"
-              isExternal
-            /> 
-          */}
           <BlockLink
-            href="https://www.airbnb.com/rooms/50506944"
-            text="Make a reservation"
+            href="https://www.bedminster.us/services/farmers_market"
+            text="Find us at the market every other Saturday starting 5/25 "
             isExternal
           />
           <BlockLink href="mailto:hello@blackhill.farm" text="Become a partner" isExternal />
-          <BlockLink href="/ventures/blackhill/handbook" text="Read our guest handbook" />
           <BlockLink
             href="https://www.instagram.com/blackhill.farm/"
             text="Follow us on Instagram"

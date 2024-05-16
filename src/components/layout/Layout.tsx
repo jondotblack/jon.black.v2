@@ -22,7 +22,7 @@ const Layout = ({ bgColor = 'crema', children, seo }: LayoutProps) => {
   const { TEXT_COLOR_TOKEN } = constants;
 
   useEffect(() => {
-    const textColor = colorMode === 'dark' ? 'swissCoffee' : 'seed';
+    const textColor = colorMode === 'dark' ? 'white' : 'seed';
 
     setColorToken(bgColor);
     setColorToken(textColor, TEXT_COLOR_TOKEN);
