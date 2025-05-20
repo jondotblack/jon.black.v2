@@ -22,7 +22,7 @@ const updates = [
   {
     id: 'blackhill',
     name: (
-      <Link href="https://www.exploretock.com/blackhillfarm" isExternal>
+      <Link href="https://blackhill.farm/pages/events" isExternal>
         View Black Hill Farm upcoming events
       </Link>
     ),

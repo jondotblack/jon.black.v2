@@ -17,7 +17,7 @@ const HomePage: NextPage = () => {
           product agency. Former CTO and VP of Engineering with extensive team management
           experience. Specializing in startup consultation, coaching entrepreneurs and executives.
           Owner of{' '}
-          <Link href="/ventures/blackhill" variant="underline">
+          <Link href="https://blackhill.farm" variant="underline">
             Black Hill Farm
           </Link>{' '}
           and co-founder of{' '}

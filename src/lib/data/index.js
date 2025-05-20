@@ -89,8 +89,8 @@ export const ClientList = [
 
 export const ActiveVentureList = [
   {
-    description: 'Nourish. Gather. Explore. Recover.',
-    href: '/ventures/blackhill',
+    description: 'Eat. Gather. Explore. Recover.',
+    href: 'https://blackhill.farm',
     text: 'Black Hill Farm',
   },
   {
